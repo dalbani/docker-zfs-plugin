@@ -1,0 +1,25 @@
+# Inspired by https://docs.github.com/en/actions/publishing-packages/publishing-docker-images#publishing-images-to-github-packages.
+name: Build Docker image
+
+on:
+  push:
+    branches:
+      - master
+  pull_request: null
+
+jobs:
+  build-image:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+      - name: Build Docker image
+        uses: docker/build-push-action@v5
+        with:
+          context: .
