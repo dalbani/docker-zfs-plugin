@@ -8,7 +8,7 @@ require (
 	github.com/coreos/go-systemd v0.0.0-20191104093116-d3cd4ed1dbcf
 	github.com/docker/go-connections v0.4.0 // indirect
 	github.com/docker/go-plugins-helpers v0.0.0-20200102110956-c9a8a2d92ccc
-	github.com/sirupsen/logrus v1.4.2
+	github.com/sirupsen/logrus v1.9.3
 	github.com/urfave/cli v1.22.2
 	golang.org/x/net v0.0.0-20200219183655-46282727080f // indirect
 )
