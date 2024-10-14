@@ -9,7 +9,7 @@ require (
 	github.com/docker/go-connections v0.4.0 // indirect
 	github.com/docker/go-plugins-helpers v0.0.0-20200102110956-c9a8a2d92ccc
 	github.com/sirupsen/logrus v1.4.2
-	github.com/urfave/cli v1.22.2
+	github.com/urfave/cli v1.22.16
 	golang.org/x/net v0.0.0-20200219183655-46282727080f // indirect
 )
 
